@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand">
+                    <img src="images/logo.png" alt="Fish Market Logo" style="width: 150px; height: auto;">
+                </a>        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="fishfish.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="menu.html">Buy Fish</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Account
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                              <li><a class="dropdown-item" href="sellerone.html">Seller Centre</a></li>
+                              <li><a class="dropdown-item" href="index.html">Chats</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <h1 class="title mt-4 mb-4">Fresh Fish Available</h1>
+        </div>
+
+        <div class="d-flex justify-content-end filter-bar">
+            <div class="row compact-filter align-items-center">
+                <div class="col-md-3">
+                    <select class="form-select form-select-sm" id="fishFilter">
+                        <option selected>Filter by Type</option>
+                        <option value="milkfish">MilkFish</option>
+                        <option value="tuna">Tuna</option>
+                        <option value="bigeye scad">Bigeye Scad</option>
+                        <option value="squid">Squid</option>
+                    </select>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" class="form-control form-control-sm" id="fishSearch" placeholder="Search fish...">
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary btn-sm" onclick="filterProducts()">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="productList">
+
+            <div class="col-md-3 product" data-fish-type="milkfish">
+                <div class="card product-card">
+                    <img src="images/bangus.jpg" class="card-img-top" alt="MilkFish">
+                    <div class="card-body">
+                        <h5 class="card-title">MilkFish</h5>
+                        <p class="card-text">Heben Diligiro</p>
+                        <p class="product-price">₱180.99/kg</p>
+                        <a href="#" class="btn btn-primary" onclick="buyNow('MilkFish', '₱180.99/kg', 'images/bangus.jpg')">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 product" data-fish-type="tuna">
+                <div class="card product-card">
+                    <img src="images/bodboron.jpeg" class="card-img-top" alt="Tuna">
+                    <div class="card-body">
+                        <h5 class="card-title">Bodboron</h5>
+                        <p class="card-text">Jhon Carlo Loguiber</p>
+                        <p class="product-price">₱190.00/kg</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 product" data-fish-type="squid">
+                <div class="card product-card">
+                    <img src="images/squid.jpg" class="card-img-top" alt="Squid">
+                    <div class="card-body">
+                        <h5 class="card-title">Squid</h5>
+                        <p class="card-text">Lawrence Rufo</p>
+                        <p class="product-price">₱238.00/kg</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product" data-fish-type="squid">
+                <div class="card product-card">
+                    <img src="images/squid.jpg" class="card-img-top" alt="Squid">
+                    <div class="card-body">
+                        <h5 class="card-title">Squid</h5>
+                        <p class="card-text">Hibin Diligiro</p>
+                        <p class="product-price">₱232.00/kg</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product" data-fish-type="bigeye scad">
+                <div class="card product-card">
+                    <img src="images/matambaka.jpg" class="card-img-top" alt="Bigeye Scad">
+                    <div class="card-body">
+                        <h5 class="card-title">Matambaka</h5>
+                        <p class="card-text">Nicoel Gay Embarque</p>
+                        <p class="product-price">₱220.00/kg</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product" data-fish-type="red snapper">
+                <div class="card product-card">
+                    <img src="images/mayamaya.jpg" class="card-img-top" alt="Red Snapper">
+                    <div class="card-body">
+                        <h5 class="card-title">Maya-maya</h5>
+                        <p class="card-text">John Carlo Narvasa</p>
+                        <p class="product-price">₱198.00/kg</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product" data-fish-type="tuna">
+                <div class="card product-card">
+                    <img src="images/tuna.jpg" class="card-img-top" alt="Tuna">
+                    <div class="card-body">
+                        <h5 class="card-title">Tuna</h5>
+                        <p class="card-text">John Carlo Narvasa</p>
+                        <p class="product-price">₱432.00/kg</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product" data-fish-type="tuna">
+                <div class="card product-card">
+                    <img src="images/tunaa.jpg" class="card-img-top" alt="Tuna">
+                    <div class="card-body">
+                        <h5 class="card-title">Tuna</h5>
+                        <p class="card-text">Brylle Villina</p>
+                        <p class="product-price">₱480.00/kg</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 product" data-fish-type="bigeye scad">
+                <div class="card product-card">
+                    <img src="images/matambaka.jpg" class="card-img-top" alt="Bigeye Scad">
+                    <div class="card-body">
+                        <h5 class="card-title">Matambaka</h5>
+                        <p class="card-text">Hibin DIligiro</p>
+                        <p class="product-price">₱172.00/kg</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination mt-4">
+            <nav aria-label="Fish pagination">
+                <ul class="pagination justify-content-center" id="paginationControls">
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+</html>

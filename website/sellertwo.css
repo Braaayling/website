@@ -1,0 +1,103 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h3, .card-title {
+    font-family: 'Lora', serif;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    width: 220px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar .nav-link {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.sidebar .nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.sidebar a:hover {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+.content {
+    margin-left: 240px;
+    padding: 20px;
+    width: calc(100% - 240px);
+}
+
+.image-upload {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.image-upload img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.image-upload .upload-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #f1f3f5;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+}
+
+.form-control {
+    border-color: #d1e7dd;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #95d5b2;
+}
+
+.btn-cancel {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border: 1px solid #d1e7dd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-add {
+    background-color: #c4a484;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-title {
+    font-family: 'Lora', serif;
+}
+
+.metric-card-title {
+    font-family: 'Lora', serif;
+}
+
+.metric-card-text {
+    font-family: 'Poppins', sans-serif;
+}

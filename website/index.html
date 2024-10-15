@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Fish Business Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-section">
+                <img src="images/man1.png" alt="Profile" class="profile-pic">
+                <p class="name">Heben Deligiro</p>
+                <p class="status">Online</p>
+            </div>
+            <div class="search-section">
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+            <div class="chat-list">
+                <div class="chat">
+                    <img src="images/man1.png" alt="Chat" class="chat-pic">
+                    <div class="chat-info">
+                        <p class="chat-name">Heben Deligiro</p>
+                        <p class="chat-message">How much for a Fish</p>
+                    </div>
+                    <p class="chat-time">11:15</p>
+                </div>                
+            </div>
+        </div>
+ 
+        <div class="chat-window">
+            <div class="chat-header">
+                <p class="chat-title">Heben Diligiro</p>
+                <div class="chat-options">
+                    <button class="tab active">Messages</button>
+                    <button class="tab" onclick="window.location.href='menu.html'">Back</button>
+                </div>
+            </div>
+            <div class="chat-body">
+                <div class="message sent">
+                    <p>You, 11:26 AM</p>
+                    <p>When available delivery sir?<span></span></p>
+                </div>
+                <div class="message received">
+                    <p>Heben Diligiro, 11:25 AM</p>
+                    <p>Pwede rapo 5am tomorrow mam.</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" class="message-input" placeholder="Type a message">
+                <button class="send-btn"><i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

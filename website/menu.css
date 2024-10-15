@@ -1,0 +1,150 @@
+body {
+    background-color: #f0f8ff;
+    font-family: 'Lora', serif;
+}
+
+h1, h2, h3, h5 {
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.filter-bar {
+    margin-bottom: 30px;
+}
+
+.compact-filter {
+    max-width: 400px;
+}
+
+.compact-filter select, .compact-filter input {
+    border-radius: 20px;
+    border: 1px solid #2c3e50;
+}
+
+.product-card {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-family: 'Lora', serif;
+}
+
+.product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #16a085;
+}
+
+.btn-primary {
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #148f77;
+}
+
+.filter-bar button {
+    background-color: #2980b9;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.filter-bar button:hover {
+    background-color: #2471a3;
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pagination {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.pagination .page-item .page-link {
+    width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    border: none;
+    margin: 0 8px;
+    padding: 0;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.pagination .page-link:hover {
+    background-color: #2471a3;
+}
+
+.pagination .page-link::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.pagination .page-link:hover::before {
+    background-color: #2471a3;
+}
+
+@media (max-width: 768px) {
+    .pagination .page-item .page-link {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .compact-filter {
+        flex-direction: column;
+    }
+
+    .compact-filter .col-md-3,
+    .compact-filter .col-md-5,
+    .compact-filter .col-md-4 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

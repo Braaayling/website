@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    width: 200px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+.sidebar .nav-link {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.sidebar .nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.sidebar a:hover {
+    background-color: #e9ecef;
+    color: #000;
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.badge {
+    font-size: 0.9rem;
+}
+.sidebar {
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+        
+.sidebar .nav-link {
+    color: #333;
+}
+        
+.sidebar .nav-link.active {
+    background-color: #e9ecef;
+    }
+
+.transparent-card {
+    border: none;
+    box-shadow: none;
+}
+        
+.metric-card {
+    margin-bottom: 1rem;
+}
+       
+.metric-card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.metric-card-text {
+    font-size: 0.9rem;
+    color: #888;
+}
+        
+.product-card {
+    margin-bottom: 1rem;
+}
+        
+.badge-featured {
+    background-color: green;
+}
